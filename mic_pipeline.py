@@ -7,6 +7,7 @@ import spacy
 from mic_rules import rule_based_mic_detector
 
 nlp = spacy.load("en_core_web_sm")
+nlp.max_length = 10000000
 
 def clean_article(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
