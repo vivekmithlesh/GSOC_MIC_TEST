@@ -71,7 +71,7 @@ def save_results(results, output_file="mic_results.csv"):
             writer.writerow(r)
 
 if __name__ == "__main__":
-    INPUT_DIR = "./news_articles"
+    INPUT_DIR = '/content/GSOC_MIC_TEST/news_articles'
     COUNTRY_LIST = "./states2016.csv"
     OUTPUT_FILE = "mic_results.csv"
 
